@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>File Monitor: Файл FileMonitor.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">File Monitor
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл FileMonitor.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Реализация класса <a class="el" href="class_file_monitor.html" title="Класс для отслеживания состояния файла">FileMonitor</a>.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_file_monitor_8h_source.html">FileMonitor.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;wincrypt.h&gt;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a328caba034ae46c4a3f99a89882a6e21" id="r_a328caba034ae46c4a3f99a89882a6e21"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_monitor_8cpp.html#a328caba034ae46c4a3f99a89882a6e21">getFileTime</a> (const fs::path &amp;p)</td></tr>
+<tr class="memdesc:a328caba034ae46c4a3f99a89882a6e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразует время файловой системы в стандартное время  <br /></td></tr>
+<tr class="separator:a328caba034ae46c4a3f99a89882a6e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Реализация класса <a class="el" href="class_file_monitor.html" title="Класс для отслеживания состояния файла">FileMonitor</a>. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a328caba034ae46c4a3f99a89882a6e21" name="a328caba034ae46c4a3f99a89882a6e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328caba034ae46c4a3f99a89882a6e21">&#9670;&#160;</a></span>getFileTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t getFileTime </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразует время файловой системы в стандартное время </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Нормализованный путь к файлу </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>time_t Время последнего изменения файла в секундах с эпохи Unix </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

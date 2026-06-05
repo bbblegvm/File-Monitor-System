@@ -1,0 +1,3 @@
+C:\mingw64\bin\cmake.exe -E rm -f CMakeFiles\FileMonitor.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\FileMonitor.dir/objects.a @CMakeFiles\FileMonitor.dir\objects1.rsp
+C:\mingw64\bin\c++.exe -Wl,--whole-archive CMakeFiles\FileMonitor.dir/objects.a -Wl,--no-whole-archive -o FileMonitor.exe -Wl,--out-implib,libFileMonitor.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FileMonitor.dir\linkLibs.rsp

@@ -1,0 +1,33 @@
+Start testing: Jun 03 18:35 RTZ 2 (����)
+----------------------------------------------------------
+1/1 Testing: AllTests
+1/1 Test: AllTests
+Command: "C:/HSE/PROJECT/build/FileMonitorTests.exe"
+Directory: C:/HSE/PROJECT/build
+"AllTests" start time: Jun 03 18:35 RTZ 2 (����)
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.11"
+[doctest] run with "--help" for options
+
+
+[⚠️ ВНИМАНИЕ] ФАЙЛ ИЗМЕНЕН: C:/HSE/PROJECT/build/monitor_me.txt
+> 
+
+[⚠️ ВНИМАНИЕ] ФАЙЛ УДАЛЕН/ПЕРЕМЕЩЕН: C:/HSE/PROJECT/build/monitor_me.txt
+> 
+✓ HTML-отчет успешно создан!
+Путь: C:/HSE/PROJECT/build/report.html
+===============================================================================
+[doctest] test cases:  7 |  7 passed | 0 failed | 0 skipped
+[doctest] assertions: 21 | 21 passed | 0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"AllTests" end time: Jun 03 18:35 RTZ 2 (����)
+"AllTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 03 18:35 RTZ 2 (����)

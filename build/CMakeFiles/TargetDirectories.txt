@@ -1,0 +1,17 @@
+C:/HSE/PROJECT/build/CMakeFiles/FileMonitor.dir
+C:/HSE/PROJECT/build/CMakeFiles/FileMonitorTests.dir
+C:/HSE/PROJECT/build/CMakeFiles/test.dir
+C:/HSE/PROJECT/build/CMakeFiles/edit_cache.dir
+C:/HSE/PROJECT/build/CMakeFiles/rebuild_cache.dir
+C:/HSE/PROJECT/build/CMakeFiles/list_install_components.dir
+C:/HSE/PROJECT/build/CMakeFiles/install.dir
+C:/HSE/PROJECT/build/CMakeFiles/install/local.dir
+C:/HSE/PROJECT/build/CMakeFiles/install/strip.dir
+C:/HSE/PROJECT/build/_deps/doctest-build/CMakeFiles/doctest_with_main.dir
+C:/HSE/PROJECT/build/_deps/doctest-build/CMakeFiles/test.dir
+C:/HSE/PROJECT/build/_deps/doctest-build/CMakeFiles/edit_cache.dir
+C:/HSE/PROJECT/build/_deps/doctest-build/CMakeFiles/rebuild_cache.dir
+C:/HSE/PROJECT/build/_deps/doctest-build/CMakeFiles/list_install_components.dir
+C:/HSE/PROJECT/build/_deps/doctest-build/CMakeFiles/install.dir
+C:/HSE/PROJECT/build/_deps/doctest-build/CMakeFiles/install/local.dir
+C:/HSE/PROJECT/build/_deps/doctest-build/CMakeFiles/install/strip.dir

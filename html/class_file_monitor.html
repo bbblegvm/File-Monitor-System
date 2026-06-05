@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>File Monitor: Класс FileMonitor</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">File Monitor
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_file_monitor-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс FileMonitor</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для отслеживания состояния файла  
+ <a href="class_file_monitor.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_file_monitor_8h_source.html">FileMonitor.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a855f7517cd1cf66f706d9b30963dd592" id="r_a855f7517cd1cf66f706d9b30963dd592"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a855f7517cd1cf66f706d9b30963dd592">FileMonitor</a> (const std::string &amp;path, const std::string &amp;<a class="el" href="main_8cpp.html#a7f4934f0abd9c9e9d1da7b4b49fdfecc">logPath</a>)</td></tr>
+<tr class="memdesc:a855f7517cd1cf66f706d9b30963dd592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_file_monitor.html" title="Класс для отслеживания состояния файла">FileMonitor</a>.  <br /></td></tr>
+<tr class="separator:a855f7517cd1cf66f706d9b30963dd592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbcb7dabb8a7910298532b89824086b3" id="r_abbcb7dabb8a7910298532b89824086b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#abbcb7dabb8a7910298532b89824086b3">initialize</a> (std::mutex &amp;<a class="el" href="main_8cpp.html#ad002bd5822e3da23137f58989455217b">consoleMtx</a>, bool silent=false)</td></tr>
+<tr class="memdesc:abbcb7dabb8a7910298532b89824086b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет первичный осмотр файла и записывает эталонные данные  <br /></td></tr>
+<tr class="separator:abbcb7dabb8a7910298532b89824086b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61557ff2591fd535fa36031ffc62c18b" id="r_a61557ff2591fd535fa36031ffc62c18b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a61557ff2591fd535fa36031ffc62c18b">checkFile</a> (std::mutex &amp;<a class="el" href="main_8cpp.html#ad002bd5822e3da23137f58989455217b">consoleMtx</a>)</td></tr>
+<tr class="memdesc:a61557ff2591fd535fa36031ffc62c18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет проверку состояния файла  <br /></td></tr>
+<tr class="separator:a61557ff2591fd535fa36031ffc62c18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7834c79ae22a705ba10f0539956bbd9" id="r_ad7834c79ae22a705ba10f0539956bbd9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#ad7834c79ae22a705ba10f0539956bbd9">getFilePath</a> () const</td></tr>
+<tr class="memdesc:ad7834c79ae22a705ba10f0539956bbd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает путь к наблюдаемому файлу  <br /></td></tr>
+<tr class="separator:ad7834c79ae22a705ba10f0539956bbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace61b28974c37a961af8b59c122d83a2" id="r_ace61b28974c37a961af8b59c122d83a2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#ace61b28974c37a961af8b59c122d83a2">getStatus</a> () const</td></tr>
+<tr class="memdesc:ace61b28974c37a961af8b59c122d83a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущий статус файла  <br /></td></tr>
+<tr class="separator:ace61b28974c37a961af8b59c122d83a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c10ef7f58de5aa9e11f3486551c7e7" id="r_a44c10ef7f58de5aa9e11f3486551c7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a44c10ef7f58de5aa9e11f3486551c7e7">setStatus</a> (const std::string &amp;status)</td></tr>
+<tr class="memdesc:a44c10ef7f58de5aa9e11f3486551c7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает статус файла  <br /></td></tr>
+<tr class="separator:a44c10ef7f58de5aa9e11f3486551c7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea5f98b5cc75f6d92b67757e54bc3ff" id="r_a1ea5f98b5cc75f6d92b67757e54bc3ff"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a1ea5f98b5cc75f6d92b67757e54bc3ff">getHash</a> () const</td></tr>
+<tr class="memdesc:a1ea5f98b5cc75f6d92b67757e54bc3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает хеш файла  <br /></td></tr>
+<tr class="separator:a1ea5f98b5cc75f6d92b67757e54bc3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476495f89af3ad9cb53854091affd96a" id="r_a476495f89af3ad9cb53854091affd96a"><td class="memItemLeft" align="right" valign="top">uintmax_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a476495f89af3ad9cb53854091affd96a">getSize</a> () const</td></tr>
+<tr class="memdesc:a476495f89af3ad9cb53854091affd96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает размер файла  <br /></td></tr>
+<tr class="separator:a476495f89af3ad9cb53854091affd96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4aeb5ed4c3d94717aa07e92a0ca1a0e" id="r_af4aeb5ed4c3d94717aa07e92a0ca1a0e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#af4aeb5ed4c3d94717aa07e92a0ca1a0e">getLastModifiedStr</a> () const</td></tr>
+<tr class="memdesc:af4aeb5ed4c3d94717aa07e92a0ca1a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает отформатированную дату последнего изменения  <br /></td></tr>
+<tr class="separator:af4aeb5ed4c3d94717aa07e92a0ca1a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a4bd563dbfa9164a378ea4674bbb2edb4" id="r_a4bd563dbfa9164a378ea4674bbb2edb4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a4bd563dbfa9164a378ea4674bbb2edb4">calculateSHA256</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a4bd563dbfa9164a378ea4674bbb2edb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет SHA-256 хеш файла с помощью Windows CryptoAPI.  <br /></td></tr>
+<tr class="separator:a4bd563dbfa9164a378ea4674bbb2edb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e33114939a00153f8ce26dd6a839f4" id="r_a62e33114939a00153f8ce26dd6a839f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a62e33114939a00153f8ce26dd6a839f4">writeToLog</a> (const std::string &amp;message)</td></tr>
+<tr class="memdesc:a62e33114939a00153f8ce26dd6a839f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записывает информацию о событии в лог-файл  <br /></td></tr>
+<tr class="separator:a62e33114939a00153f8ce26dd6a839f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349c135cf1ff0837395d5a3a22449c49" id="r_a349c135cf1ff0837395d5a3a22449c49"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a349c135cf1ff0837395d5a3a22449c49">formatTime</a> (std::time_t t) const</td></tr>
+<tr class="memdesc:a349c135cf1ff0837395d5a3a22449c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Форматирует время типа std::time_t в читаемую строку  <br /></td></tr>
+<tr class="separator:a349c135cf1ff0837395d5a3a22449c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a11f9005111197a25250a7495c9d17e54" id="r_a11f9005111197a25250a7495c9d17e54"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a11f9005111197a25250a7495c9d17e54">filePath</a></td></tr>
+<tr class="memdesc:a11f9005111197a25250a7495c9d17e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к отслеживаемому файлу  <br /></td></tr>
+<tr class="separator:a11f9005111197a25250a7495c9d17e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b16365506c6d20a61ec36f93023d363" id="r_a1b16365506c6d20a61ec36f93023d363"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a1b16365506c6d20a61ec36f93023d363">logFilePath</a></td></tr>
+<tr class="memdesc:a1b16365506c6d20a61ec36f93023d363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к лог-файлу  <br /></td></tr>
+<tr class="separator:a1b16365506c6d20a61ec36f93023d363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7014dd11b57f63ced32dc952c0f98e" id="r_a4a7014dd11b57f63ced32dc952c0f98e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a4a7014dd11b57f63ced32dc952c0f98e">lastHash</a></td></tr>
+<tr class="memdesc:a4a7014dd11b57f63ced32dc952c0f98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Эталонный SHA-256 хеш файла  <br /></td></tr>
+<tr class="separator:a4a7014dd11b57f63ced32dc952c0f98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08eb21486019674f653e78d9bc748f71" id="r_a08eb21486019674f653e78d9bc748f71"><td class="memItemLeft" align="right" valign="top">uintmax_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a08eb21486019674f653e78d9bc748f71">lastSize</a></td></tr>
+<tr class="memdesc:a08eb21486019674f653e78d9bc748f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Эталонный размер файла в байтах  <br /></td></tr>
+<tr class="separator:a08eb21486019674f653e78d9bc748f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a701ac55ae252bb31f4afcc7209b2e4df" id="r_a701ac55ae252bb31f4afcc7209b2e4df"><td class="memItemLeft" align="right" valign="top">std::time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a701ac55ae252bb31f4afcc7209b2e4df">lastModified</a></td></tr>
+<tr class="memdesc:a701ac55ae252bb31f4afcc7209b2e4df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Эталонное время последнего изменения файла  <br /></td></tr>
+<tr class="separator:a701ac55ae252bb31f4afcc7209b2e4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac882a0515f64dc0b5abddfdbfdd25f9a" id="r_ac882a0515f64dc0b5abddfdbfdd25f9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#ac882a0515f64dc0b5abddfdbfdd25f9a">fileExists</a></td></tr>
+<tr class="memdesc:ac882a0515f64dc0b5abddfdbfdd25f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг существования файла на диске  <br /></td></tr>
+<tr class="separator:ac882a0515f64dc0b5abddfdbfdd25f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc7b705e83983cc00a8a3d991d7f242" id="r_a9fc7b705e83983cc00a8a3d991d7f242"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_monitor.html#a9fc7b705e83983cc00a8a3d991d7f242">currentStatus</a></td></tr>
+<tr class="memdesc:a9fc7b705e83983cc00a8a3d991d7f242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий статус файла  <br /></td></tr>
+<tr class="separator:a9fc7b705e83983cc00a8a3d991d7f242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для отслеживания состояния файла </p>
+<p>Хранит эталонные параметры файла и сравнивает их с текущими для обнаружения модификаций, удаления или блокировки файла </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a855f7517cd1cf66f706d9b30963dd592" name="a855f7517cd1cf66f706d9b30963dd592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a855f7517cd1cf66f706d9b30963dd592">&#9670;&#160;</a></span>FileMonitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FileMonitor::FileMonitor </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>logPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_file_monitor.html" title="Класс для отслеживания состояния файла">FileMonitor</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Путь к файлу </td></tr>
+    <tr><td class="paramname">logPath</td><td>Путь к лог-файлу </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a4bd563dbfa9164a378ea4674bbb2edb4" name="a4bd563dbfa9164a378ea4674bbb2edb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd563dbfa9164a378ea4674bbb2edb4">&#9670;&#160;</a></span>calculateSHA256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string FileMonitor::calculateSHA256 </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет SHA-256 хеш файла с помощью Windows CryptoAPI. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Путь к файлу для вычисления хеша </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Хеш-сумма в шестнадцатеричном формате или пустая строка при ошибке </dd></dl>
+
+</div>
+</div>
+<a id="a61557ff2591fd535fa36031ffc62c18b" name="a61557ff2591fd535fa36031ffc62c18b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61557ff2591fd535fa36031ffc62c18b">&#9670;&#160;</a></span>checkFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileMonitor::checkFile </td>
+          <td>(</td>
+          <td class="paramtype">std::mutex &amp;&#160;</td>
+          <td class="paramname"><em>consoleMtx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет проверку состояния файла </p>
+<p>Сравнивает текущие размер и SHA-256 с эталонными. При обнаружении изменений обновляет эталоны и делает запись в лог </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">consoleMtx</td><td>Мьютекс для синхронизации вывода в консоль </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a349c135cf1ff0837395d5a3a22449c49" name="a349c135cf1ff0837395d5a3a22449c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349c135cf1ff0837395d5a3a22449c49">&#9670;&#160;</a></span>formatTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string FileMonitor::formatTime </td>
+          <td>(</td>
+          <td class="paramtype">std::time_t&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Форматирует время типа std::time_t в читаемую строку </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Время </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Строка формата "ДД.ММ.ГГГГ ЧЧ:ММ:СС" </dd></dl>
+
+</div>
+</div>
+<a id="ad7834c79ae22a705ba10f0539956bbd9" name="ad7834c79ae22a705ba10f0539956bbd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7834c79ae22a705ba10f0539956bbd9">&#9670;&#160;</a></span>getFilePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FileMonitor::getFilePath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает путь к наблюдаемому файлу </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Путь к файлу </dd></dl>
+
+</div>
+</div>
+<a id="a1ea5f98b5cc75f6d92b67757e54bc3ff" name="a1ea5f98b5cc75f6d92b67757e54bc3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea5f98b5cc75f6d92b67757e54bc3ff">&#9670;&#160;</a></span>getHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FileMonitor::getHash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает хеш файла </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string SHA-256 хеш </dd></dl>
+
+</div>
+</div>
+<a id="af4aeb5ed4c3d94717aa07e92a0ca1a0e" name="af4aeb5ed4c3d94717aa07e92a0ca1a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4aeb5ed4c3d94717aa07e92a0ca1a0e">&#9670;&#160;</a></span>getLastModifiedStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FileMonitor::getLastModifiedStr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает отформатированную дату последнего изменения </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Строка с датой и временем </dd></dl>
+
+</div>
+</div>
+<a id="a476495f89af3ad9cb53854091affd96a" name="a476495f89af3ad9cb53854091affd96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a476495f89af3ad9cb53854091affd96a">&#9670;&#160;</a></span>getSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintmax_t FileMonitor::getSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает размер файла </p>
+<dl class="section return"><dt>Возвращает</dt><dd>uintmax_t Размер в байтах </dd></dl>
+
+</div>
+</div>
+<a id="ace61b28974c37a961af8b59c122d83a2" name="ace61b28974c37a961af8b59c122d83a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace61b28974c37a961af8b59c122d83a2">&#9670;&#160;</a></span>getStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FileMonitor::getStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает текущий статус файла </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Статус файла </dd></dl>
+
+</div>
+</div>
+<a id="abbcb7dabb8a7910298532b89824086b3" name="abbcb7dabb8a7910298532b89824086b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbcb7dabb8a7910298532b89824086b3">&#9670;&#160;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileMonitor::initialize </td>
+          <td>(</td>
+          <td class="paramtype">std::mutex &amp;&#160;</td>
+          <td class="paramname"><em>consoleMtx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>silent</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет первичный осмотр файла и записывает эталонные данные </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">consoleMtx</td><td>Мьютекс для синхронизации вывода в консоль </td></tr>
+    <tr><td class="paramname">silent</td><td>Флаг тихого режима </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>Если файл не существует или недоступен для чтения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44c10ef7f58de5aa9e11f3486551c7e7" name="a44c10ef7f58de5aa9e11f3486551c7e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c10ef7f58de5aa9e11f3486551c7e7">&#9670;&#160;</a></span>setStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileMonitor::setStatus </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Устанавливает статус файла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>Новый статус </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a62e33114939a00153f8ce26dd6a839f4" name="a62e33114939a00153f8ce26dd6a839f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e33114939a00153f8ce26dd6a839f4">&#9670;&#160;</a></span>writeToLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileMonitor::writeToLog </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Записывает информацию о событии в лог-файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Текст сообщения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>Если лог-файл недоступен для записи </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a9fc7b705e83983cc00a8a3d991d7f242" name="a9fc7b705e83983cc00a8a3d991d7f242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc7b705e83983cc00a8a3d991d7f242">&#9670;&#160;</a></span>currentStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FileMonitor::currentStatus</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текущий статус файла </p>
+
+</div>
+</div>
+<a id="ac882a0515f64dc0b5abddfdbfdd25f9a" name="ac882a0515f64dc0b5abddfdbfdd25f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac882a0515f64dc0b5abddfdbfdd25f9a">&#9670;&#160;</a></span>fileExists</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FileMonitor::fileExists</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг существования файла на диске </p>
+
+</div>
+</div>
+<a id="a11f9005111197a25250a7495c9d17e54" name="a11f9005111197a25250a7495c9d17e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f9005111197a25250a7495c9d17e54">&#9670;&#160;</a></span>filePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FileMonitor::filePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Путь к отслеживаемому файлу </p>
+
+</div>
+</div>
+<a id="a4a7014dd11b57f63ced32dc952c0f98e" name="a4a7014dd11b57f63ced32dc952c0f98e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a7014dd11b57f63ced32dc952c0f98e">&#9670;&#160;</a></span>lastHash</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FileMonitor::lastHash</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Эталонный SHA-256 хеш файла </p>
+
+</div>
+</div>
+<a id="a701ac55ae252bb31f4afcc7209b2e4df" name="a701ac55ae252bb31f4afcc7209b2e4df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a701ac55ae252bb31f4afcc7209b2e4df">&#9670;&#160;</a></span>lastModified</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::time_t FileMonitor::lastModified</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Эталонное время последнего изменения файла </p>
+
+</div>
+</div>
+<a id="a08eb21486019674f653e78d9bc748f71" name="a08eb21486019674f653e78d9bc748f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08eb21486019674f653e78d9bc748f71">&#9670;&#160;</a></span>lastSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintmax_t FileMonitor::lastSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Эталонный размер файла в байтах </p>
+
+</div>
+</div>
+<a id="a1b16365506c6d20a61ec36f93023d363" name="a1b16365506c6d20a61ec36f93023d363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b16365506c6d20a61ec36f93023d363">&#9670;&#160;</a></span>logFilePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FileMonitor::logFilePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Путь к лог-файлу </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="_file_monitor_8h_source.html">FileMonitor.h</a></li>
+<li><a class="el" href="_file_monitor_8cpp.html">FileMonitor.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

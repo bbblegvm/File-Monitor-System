@@ -1,0 +1,48 @@
+﻿[03.06.2026 18:24:18] Добавлен: C:/HSE/PROJECT/build/time.txt | SHA-256: 3a6eb0790f39ac87c94f3856b2dd2c5d110e6811602261a9a923d3bb23adc8b7
+[03.06.2026 18:24:22] Добавлен: C:/HSE/PROJECT/build/time.txt | SHA-256: 3a6eb0790f39ac87c94f3856b2dd2c5d110e6811602261a9a923d3bb23adc8b7
+
+--- Запуск программы мониторинга ---
+[03.06.2026 18:24:41] Добавлен: C:/HSE/PROJECT/build/time.txt | SHA-256: 3a6eb0790f39ac87c94f3856b2dd2c5d110e6811602261a9a923d3bb23adc8b7
+[03.06.2026 18:33:58] Добавлен: C:/HSE/PROJECT/build/time.txt | SHA-256: 3a6eb0790f39ac87c94f3856b2dd2c5d110e6811602261a9a923d3bb23adc8b7
+[03.06.2026 18:35:09] Добавлен: C:/HSE/PROJECT/build/time.txt | SHA-256: 3a6eb0790f39ac87c94f3856b2dd2c5d110e6811602261a9a923d3bb23adc8b7
+
+--- Запуск программы мониторинга ---
+
+--- Запуск программы мониторинга ---
+
+--- Запуск программы мониторинга ---
+
+--- Запуск программы мониторинга ---
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/ctf.py | SHA-256: dfcd92ce08526cdf409732ca5a611d44a3be890a67f447d811b01d773e9d3de5
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/extracted_data.txt | SHA-256: 93b4ac118746c75551186205df0514305918c35386ac13039b0f5b30b175ce1e
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/fake~$fake.txt | SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/hello.docx | SHA-256: a5e1dac955c67e4cc2c7c378ab79cc2db0fd50ccef5e1618a7c2a0058ae7aacb
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/payload.zip | SHA-256: 34348cdfe75b286a721cc697b24f47689ad43170d2211bc47f3d8fffd13240a6
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/qq.xlsx | SHA-256: 989f09c707ebc374174baba6723bf8a410e3e80d9095cfb3d4bfa1f2894967c2
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/qq2.pptx | SHA-256: 9fb003a85659b2387d8d8b35de804a581c386379b37fe1d99044b9c1a66df2fb
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/wwerwr/wewer.txt | SHA-256: 94b83f9e1fdf9257eadceca83c0b4e6cd394579cdf0dc0f573d5b649b41ce288
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/Лист Microsoft Excel.xlsx | SHA-256: 2edb2cdd39c92d168afe9e47075e4d258c0aad23ff3eab31a75d37934850580f
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/отчётт.docx | SHA-256: 552508e00d439a7205baeb5bf677c0086d046b60a7767b9ee40488950dc6f842
+[04.06.2026 20:54:10] Добавлен: C:/Users/PRIME/Desktop/ctf/пока.txt | SHA-256: 4babe1a665844a90edce24fab1675019f0f6055e9ebe0dac04aec8c1358e5e1b
+[04.06.2026 20:54:30] Добавлен: C:/Users/PRIME/Desktop/ctf/Документ Microsoft Word.docx | SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[04.06.2026 20:54:34] УДАЛЕН: C:/Users/PRIME/Desktop/ctf/Документ Microsoft Word.docx
+[04.06.2026 20:54:34] Добавлен: C:/Users/PRIME/Desktop/ctf/fakeee.docx | SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[04.06.2026 20:54:52] Добавлен: C:/Users/PRIME/Desktop/ctf/Презентация Microsoft PowerPoint.pptx | SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[04.06.2026 20:55:00] ИЗМЕНЕН: C:/Users/PRIME/Desktop/ctf/Презентация Microsoft PowerPoint.pptx
+
+--- Запуск программы мониторинга ---
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/ctf.py | SHA-256: dfcd92ce08526cdf409732ca5a611d44a3be890a67f447d811b01d773e9d3de5
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/extracted_data.txt | SHA-256: 93b4ac118746c75551186205df0514305918c35386ac13039b0f5b30b175ce1e
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/fakeee.docx | SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/fake~$fake.txt | SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/fall.txt | SHA-256: 2d78d3dd79226bd3b75fceb0457b1b845c8eed8ee21231f5c39a859683f29828
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/hello.docx | SHA-256: a5e1dac955c67e4cc2c7c378ab79cc2db0fd50ccef5e1618a7c2a0058ae7aacb
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/mood.tmp.txt | SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/payload.zip | SHA-256: 34348cdfe75b286a721cc697b24f47689ad43170d2211bc47f3d8fffd13240a6
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/qq.xlsx | SHA-256: 989f09c707ebc374174baba6723bf8a410e3e80d9095cfb3d4bfa1f2894967c2
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/qq2.pptx | SHA-256: 9fb003a85659b2387d8d8b35de804a581c386379b37fe1d99044b9c1a66df2fb
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/wwerwr/wewer.txt | SHA-256: 94b83f9e1fdf9257eadceca83c0b4e6cd394579cdf0dc0f573d5b649b41ce288
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/Лист Microsoft Excel.xlsx | SHA-256: 2edb2cdd39c92d168afe9e47075e4d258c0aad23ff3eab31a75d37934850580f
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/отчётт.docx | SHA-256: 552508e00d439a7205baeb5bf677c0086d046b60a7767b9ee40488950dc6f842
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/пока.txt | SHA-256: 4babe1a665844a90edce24fab1675019f0f6055e9ebe0dac04aec8c1358e5e1b
+[04.06.2026 21:02:56] Добавлен: C:/Users/PRIME/Desktop/ctf/Презентация Microsoft PowerPoint.pptx | SHA-256: 6b59a9217b0caa809f5301076757d384484093fb7d750ae1f7cf24e63b645f66

@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>File Monitor: Файл main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">File Monitor
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle"><div class="title">Файл main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Главный файл программы мониторинга файлов.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_file_monitor_8h_source.html">FileMonitor.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;shlobj.h&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a79d8a2b167d7a5b6e9c28607d4c2848e" id="r_a79d8a2b167d7a5b6e9c28607d4c2848e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a79d8a2b167d7a5b6e9c28607d4c2848e">getAppCurrentTime</a> ()</td></tr>
+<tr class="memdesc:a79d8a2b167d7a5b6e9c28607d4c2848e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает текущее системное время в виде отформатированной строки  <br /></td></tr>
+<tr class="separator:a79d8a2b167d7a5b6e9c28607d4c2848e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b14d59175edd974e4aacf73ca82cf61" id="r_a7b14d59175edd974e4aacf73ca82cf61"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7b14d59175edd974e4aacf73ca82cf61">normalizePath</a> (const string &amp;p)</td></tr>
+<tr class="memdesc:a7b14d59175edd974e4aacf73ca82cf61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализует путь файла (заменяет обратные слеши на прямые)  <br /></td></tr>
+<tr class="separator:a7b14d59175edd974e4aacf73ca82cf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c232861c0121531d82906478985c16b" id="r_a9c232861c0121531d82906478985c16b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a9c232861c0121531d82906478985c16b">wstringToUtf8</a> (const wstring &amp;wstr)</td></tr>
+<tr class="memdesc:a9c232861c0121531d82906478985c16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конвертирует строку формата Windows UTF-16 в UTF-8.  <br /></td></tr>
+<tr class="separator:a9c232861c0121531d82906478985c16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a43995ea92bfe2fb4ccad505c74618c" id="r_a6a43995ea92bfe2fb4ccad505c74618c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6a43995ea92bfe2fb4ccad505c74618c">getExeDirectory</a> ()</td></tr>
+<tr class="memdesc:a6a43995ea92bfe2fb4ccad505c74618c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет абсолютный путь к папке, в которой находится запущенный исполняемый файл  <br /></td></tr>
+<tr class="separator:a6a43995ea92bfe2fb4ccad505c74618c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb484766fb78523e8f8457ad2269c18a" id="r_afb484766fb78523e8f8457ad2269c18a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afb484766fb78523e8f8457ad2269c18a">selectFile</a> ()</td></tr>
+<tr class="memdesc:afb484766fb78523e8f8457ad2269c18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открывает системное диалоговое окно для выбора файла пользователем  <br /></td></tr>
+<tr class="separator:afb484766fb78523e8f8457ad2269c18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3abcd4207d3a7ca1d5874054b4fd192" id="r_ad3abcd4207d3a7ca1d5874054b4fd192"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad3abcd4207d3a7ca1d5874054b4fd192">selectFolder</a> ()</td></tr>
+<tr class="memdesc:ad3abcd4207d3a7ca1d5874054b4fd192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открывает системное диалоговое окно для выбора папки пользователем  <br /></td></tr>
+<tr class="separator:ad3abcd4207d3a7ca1d5874054b4fd192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d1f23deacb83c658510ec4bef3e53b" id="r_a78d1f23deacb83c658510ec4bef3e53b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a78d1f23deacb83c658510ec4bef3e53b">isFileMonitored</a> (const string &amp;path)</td></tr>
+<tr class="memdesc:a78d1f23deacb83c658510ec4bef3e53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, отслеживается ли указанный файл в данный момент  <br /></td></tr>
+<tr class="separator:a78d1f23deacb83c658510ec4bef3e53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e060010c0f3a5650a949a6b2ac8306e" id="r_a6e060010c0f3a5650a949a6b2ac8306e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6e060010c0f3a5650a949a6b2ac8306e">isValidFile</a> (const string &amp;path, const string &amp;filename)</td></tr>
+<tr class="memdesc:a6e060010c0f3a5650a949a6b2ac8306e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет файл на принадлежность к мусорным, системным или игнорируемым  <br /></td></tr>
+<tr class="separator:a6e060010c0f3a5650a949a6b2ac8306e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90abb3840248dd6a9cd49b295be9165d" id="r_a90abb3840248dd6a9cd49b295be9165d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a90abb3840248dd6a9cd49b295be9165d">generateHTMLReport</a> ()</td></tr>
+<tr class="memdesc:a90abb3840248dd6a9cd49b295be9165d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Генерирует HTML-отчет со списком наблюдаемых файлов и их статусами  <br /></td></tr>
+<tr class="separator:a90abb3840248dd6a9cd49b295be9165d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c27d88b625104b9a68ee486c1d00976" id="r_a8c27d88b625104b9a68ee486c1d00976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a8c27d88b625104b9a68ee486c1d00976">toggleStartup</a> ()</td></tr>
+<tr class="memdesc:a8c27d88b625104b9a68ee486c1d00976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Управляет добавлением и удалением программы из реестра автозапуска Windows.  <br /></td></tr>
+<tr class="separator:a8c27d88b625104b9a68ee486c1d00976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535d5d7ad09efdee04978c0db000a6cf" id="r_a535d5d7ad09efdee04978c0db000a6cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a535d5d7ad09efdee04978c0db000a6cf">backgroundMonitoringThread</a> ()</td></tr>
+<tr class="memdesc:a535d5d7ad09efdee04978c0db000a6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рабочая функция фонового потока  <br /></td></tr>
+<tr class="separator:a535d5d7ad09efdee04978c0db000a6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5bd9067aa6f261123165a337c7957d" id="r_aba5bd9067aa6f261123165a337c7957d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aba5bd9067aa6f261123165a337c7957d">showMenu</a> ()</td></tr>
+<tr class="memdesc:aba5bd9067aa6f261123165a337c7957d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит текстовое меню пользователя в консоль с использованием блокировки мьютекса  <br /></td></tr>
+<tr class="separator:aba5bd9067aa6f261123165a337c7957d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97" id="r_a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Точка входа в программу  <br /></td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a1c4124425048aad7bdf86cc5c098985c" id="r_a1c4124425048aad7bdf86cc5c098985c"><td class="memItemLeft" align="right" valign="top">vector&lt; unique_ptr&lt; <a class="el" href="class_file_monitor.html">FileMonitor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1c4124425048aad7bdf86cc5c098985c">monitors</a></td></tr>
+<tr class="memdesc:a1c4124425048aad7bdf86cc5c098985c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор уникальных указателей на объекты мониторинга файлов  <br /></td></tr>
+<tr class="separator:a1c4124425048aad7bdf86cc5c098985c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d805aab96d5ff9372cbdfcad436f0b" id="r_a77d805aab96d5ff9372cbdfcad436f0b"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a77d805aab96d5ff9372cbdfcad436f0b">monitoredFolders</a></td></tr>
+<tr class="memdesc:a77d805aab96d5ff9372cbdfcad436f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор строк с путями к папкам, внутри которых отслеживается появление новых файлов  <br /></td></tr>
+<tr class="separator:a77d805aab96d5ff9372cbdfcad436f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06f1d0e1513243c3d565a0a19a7dcaf" id="r_ac06f1d0e1513243c3d565a0a19a7dcaf"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac06f1d0e1513243c3d565a0a19a7dcaf">ignoredFiles</a></td></tr>
+<tr class="memdesc:ac06f1d0e1513243c3d565a0a19a7dcaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор путей к файлам, исключенным из мониторинга пользователем  <br /></td></tr>
+<tr class="separator:ac06f1d0e1513243c3d565a0a19a7dcaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadb80170e68fa7fff45cf529e239a99" id="r_abadb80170e68fa7fff45cf529e239a99"><td class="memItemLeft" align="right" valign="top">mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#abadb80170e68fa7fff45cf529e239a99">listMtx</a></td></tr>
+<tr class="memdesc:abadb80170e68fa7fff45cf529e239a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Мьютекс для защиты операций изменения векторов мониторинга  <br /></td></tr>
+<tr class="separator:abadb80170e68fa7fff45cf529e239a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad002bd5822e3da23137f58989455217b" id="r_ad002bd5822e3da23137f58989455217b"><td class="memItemLeft" align="right" valign="top">mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad002bd5822e3da23137f58989455217b">consoleMtx</a></td></tr>
+<tr class="memdesc:ad002bd5822e3da23137f58989455217b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Мьютекс для защиты потока стандартного вывода  <br /></td></tr>
+<tr class="separator:ad002bd5822e3da23137f58989455217b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad013938fced7f8a6654b652fbf12a920" id="r_ad013938fced7f8a6654b652fbf12a920"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad013938fced7f8a6654b652fbf12a920">appRunning</a> = true</td></tr>
+<tr class="memdesc:ad013938fced7f8a6654b652fbf12a920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг работы программы  <br /></td></tr>
+<tr class="separator:ad013938fced7f8a6654b652fbf12a920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4934f0abd9c9e9d1da7b4b49fdfecc" id="r_a7f4934f0abd9c9e9d1da7b4b49fdfecc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7f4934f0abd9c9e9d1da7b4b49fdfecc">logPath</a></td></tr>
+<tr class="memdesc:a7f4934f0abd9c9e9d1da7b4b49fdfecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к лог-файлу  <br /></td></tr>
+<tr class="separator:a7f4934f0abd9c9e9d1da7b4b49fdfecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Главный файл программы мониторинга файлов. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a535d5d7ad09efdee04978c0db000a6cf" name="a535d5d7ad09efdee04978c0db000a6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535d5d7ad09efdee04978c0db000a6cf">&#9670;&#160;</a></span>backgroundMonitoringThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void backgroundMonitoringThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рабочая функция фонового потока </p>
+<p>Каждые 2 секунды опрашивает существующие объекты <a class="el" href="class_file_monitor.html" title="Класс для отслеживания состояния файла">FileMonitor</a> на наличие изменений и рекурсивно сканирует наблюдаемые папки на наличие новых файлов </p>
+
+</div>
+</div>
+<a id="a90abb3840248dd6a9cd49b295be9165d" name="a90abb3840248dd6a9cd49b295be9165d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90abb3840248dd6a9cd49b295be9165d">&#9670;&#160;</a></span>generateHTMLReport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generateHTMLReport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Генерирует HTML-отчет со списком наблюдаемых файлов и их статусами </p>
+<p>Отчет сохраняется в папку с исполняемым файлом под именем report.html </p><dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>Если не удается создать или записать файл отчета </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79d8a2b167d7a5b6e9c28607d4c2848e" name="a79d8a2b167d7a5b6e9c28607d4c2848e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79d8a2b167d7a5b6e9c28607d4c2848e">&#9670;&#160;</a></span>getAppCurrentTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string getAppCurrentTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получает текущее системное время в виде отформатированной строки </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Строка времени формата "ДД.ММ.ГГГГ ЧЧ:ММ:СС" </dd></dl>
+
+</div>
+</div>
+<a id="a6a43995ea92bfe2fb4ccad505c74618c" name="a6a43995ea92bfe2fb4ccad505c74618c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a43995ea92bfe2fb4ccad505c74618c">&#9670;&#160;</a></span>getExeDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string getExeDirectory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисляет абсолютный путь к папке, в которой находится запущенный исполняемый файл </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Путь к папке программы с закрывающим слешем </dd></dl>
+
+</div>
+</div>
+<a id="a78d1f23deacb83c658510ec4bef3e53b" name="a78d1f23deacb83c658510ec4bef3e53b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d1f23deacb83c658510ec4bef3e53b">&#9670;&#160;</a></span>isFileMonitored()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isFileMonitored </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, отслеживается ли указанный файл в данный момент </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Путь к файлу для проверки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true Если файл найден в векторе monitors </dd>
+<dd>
+false Если файл не отслеживается </dd></dl>
+
+</div>
+</div>
+<a id="a6e060010c0f3a5650a949a6b2ac8306e" name="a6e060010c0f3a5650a949a6b2ac8306e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e060010c0f3a5650a949a6b2ac8306e">&#9670;&#160;</a></span>isValidFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidFile </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет файл на принадлежность к мусорным, системным или игнорируемым </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Полный путь к файлу </td></tr>
+    <tr><td class="paramname">filename</td><td>Имя файла с расширением </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true Если файл пригоден для мониторинга </dd>
+<dd>
+false Если файл является скрытым, системным или находится в черном списке </dd></dl>
+
+</div>
+</div>
+<a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Точка входа в программу </p>
+<p>Настраивает кодировки, парсит аргументы командной строки, инициализирует лог, запускает фоновый поток мониторинга и начинает цикл обработки команд пользователя </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Количество аргументов командной строки </td></tr>
+    <tr><td class="paramname">argv</td><td>Массив строк-аргументов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>int Код завершения программы (0 при успехе, 1 при фатальной ошибке) </dd></dl>
+
+</div>
+</div>
+<a id="a7b14d59175edd974e4aacf73ca82cf61" name="a7b14d59175edd974e4aacf73ca82cf61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b14d59175edd974e4aacf73ca82cf61">&#9670;&#160;</a></span>normalizePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string normalizePath </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Нормализует путь файла (заменяет обратные слеши на прямые) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Исходный путь </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Нормализованный путь формата UTF-8 </dd></dl>
+
+</div>
+</div>
+<a id="afb484766fb78523e8f8457ad2269c18a" name="afb484766fb78523e8f8457ad2269c18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb484766fb78523e8f8457ad2269c18a">&#9670;&#160;</a></span>selectFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string selectFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Открывает системное диалоговое окно для выбора файла пользователем </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Путь к выбранному файлу (UTF-8) или пустая строка в случае отмены </dd></dl>
+
+</div>
+</div>
+<a id="ad3abcd4207d3a7ca1d5874054b4fd192" name="ad3abcd4207d3a7ca1d5874054b4fd192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3abcd4207d3a7ca1d5874054b4fd192">&#9670;&#160;</a></span>selectFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string selectFolder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Открывает системное диалоговое окно для выбора папки пользователем </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Путь к выбранной папке (UTF-8) или пустая строка в случае отмены </dd></dl>
+
+</div>
+</div>
+<a id="aba5bd9067aa6f261123165a337c7957d" name="aba5bd9067aa6f261123165a337c7957d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba5bd9067aa6f261123165a337c7957d">&#9670;&#160;</a></span>showMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void showMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит текстовое меню пользователя в консоль с использованием блокировки мьютекса </p>
+
+</div>
+</div>
+<a id="a8c27d88b625104b9a68ee486c1d00976" name="a8c27d88b625104b9a68ee486c1d00976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c27d88b625104b9a68ee486c1d00976">&#9670;&#160;</a></span>toggleStartup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void toggleStartup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Управляет добавлением и удалением программы из реестра автозапуска Windows. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>В случае отказа в доступе к реестру </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9c232861c0121531d82906478985c16b" name="a9c232861c0121531d82906478985c16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c232861c0121531d82906478985c16b">&#9670;&#160;</a></span>wstringToUtf8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string wstringToUtf8 </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>wstr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конвертирует строку формата Windows UTF-16 в UTF-8. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wstr</td><td>Исходная широкая строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string Конвертированная и нормализованная строка UTF-8 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="ad013938fced7f8a6654b652fbf12a920" name="ad013938fced7f8a6654b652fbf12a920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad013938fced7f8a6654b652fbf12a920">&#9670;&#160;</a></span>appRunning</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool appRunning = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Флаг работы программы </p>
+
+</div>
+</div>
+<a id="ad002bd5822e3da23137f58989455217b" name="ad002bd5822e3da23137f58989455217b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad002bd5822e3da23137f58989455217b">&#9670;&#160;</a></span>consoleMtx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mutex consoleMtx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Мьютекс для защиты потока стандартного вывода </p>
+
+</div>
+</div>
+<a id="ac06f1d0e1513243c3d565a0a19a7dcaf" name="ac06f1d0e1513243c3d565a0a19a7dcaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06f1d0e1513243c3d565a0a19a7dcaf">&#9670;&#160;</a></span>ignoredFiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; ignoredFiles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вектор путей к файлам, исключенным из мониторинга пользователем </p>
+
+</div>
+</div>
+<a id="abadb80170e68fa7fff45cf529e239a99" name="abadb80170e68fa7fff45cf529e239a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abadb80170e68fa7fff45cf529e239a99">&#9670;&#160;</a></span>listMtx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mutex listMtx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Мьютекс для защиты операций изменения векторов мониторинга </p>
+
+</div>
+</div>
+<a id="a7f4934f0abd9c9e9d1da7b4b49fdfecc" name="a7f4934f0abd9c9e9d1da7b4b49fdfecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4934f0abd9c9e9d1da7b4b49fdfecc">&#9670;&#160;</a></span>logPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string logPath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Путь к лог-файлу </p>
+
+</div>
+</div>
+<a id="a77d805aab96d5ff9372cbdfcad436f0b" name="a77d805aab96d5ff9372cbdfcad436f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d805aab96d5ff9372cbdfcad436f0b">&#9670;&#160;</a></span>monitoredFolders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; monitoredFolders</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вектор строк с путями к папкам, внутри которых отслеживается появление новых файлов </p>
+
+</div>
+</div>
+<a id="a1c4124425048aad7bdf86cc5c098985c" name="a1c4124425048aad7bdf86cc5c098985c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4124425048aad7bdf86cc5c098985c">&#9670;&#160;</a></span>monitors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;unique_ptr&lt;<a class="el" href="class_file_monitor.html">FileMonitor</a>&gt; &gt; monitors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вектор уникальных указателей на объекты мониторинга файлов </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
