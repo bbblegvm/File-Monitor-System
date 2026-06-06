@@ -34,6 +34,19 @@ var menudata={children:[
 {text:"Файлы",url:"files.html",children:[
 {text:"Файлы",url:"files.html"},
 {text:"Список членов всех файлов",url:"globals.html",children:[
-{text:"Указатель",url:"globals.html"},
+{text:"Указатель",url:"globals.html",children:[
+{text:"a",url:"globals.html#index_a"},
+{text:"b",url:"globals.html#index_b"},
+{text:"c",url:"globals.html#index_c"},
+{text:"d",url:"globals.html#index_d"},
+{text:"g",url:"globals.html#index_g"},
+{text:"i",url:"globals.html#index_i"},
+{text:"l",url:"globals.html#index_l"},
+{text:"m",url:"globals.html#index_m"},
+{text:"n",url:"globals.html#index_n"},
+{text:"s",url:"globals.html#index_s"},
+{text:"t",url:"globals.html#index_t"},
+{text:"w",url:"globals.html#index_w"}]},
 {text:"Функции",url:"globals_func.html"},
-{text:"Переменные",url:"globals_vars.html"}]}]}]}
+{text:"Переменные",url:"globals_vars.html"},
+{text:"Макросы",url:"globals_defs.html"}]}]}]}

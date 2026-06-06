@@ -1,10 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: "abcfgilmnstw",
+  0: "abcdfgilmnstuw",
   1: "f",
-  2: "fm",
+  2: "fmtu",
   3: "bcfgimnstw",
-  4: "acfilm"
+  4: "acfilm",
+  5: "dt"
 };
 
 var indexSectionNames =
@@ -13,7 +14,8 @@ var indexSectionNames =
   1: "classes",
   2: "files",
   3: "functions",
-  4: "variables"
+  4: "variables",
+  5: "defines"
 };
 
 var indexSectionLabels =
@@ -22,6 +24,7 @@ var indexSectionLabels =
   1: "Классы",
   2: "Файлы",
   3: "Функции",
-  4: "Переменные"
+  4: "Переменные",
+  5: "Макросы"
 };
 
