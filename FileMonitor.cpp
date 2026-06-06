@@ -118,7 +118,7 @@ void FileMonitor::checkFile(mutex& consoleMtx) {
     currentStatus = "Удален/Перемещен";
     writeToLog("УДАЛЕН: " + filePath);
     lock_guard<mutex> lock(consoleMtx);
-    cout << "\n\n[ВНИМАНИЕ] ФАЙЛ УДАЛЕН/ПЕРЕМЕЩЕН: " << filePath << "\n> ";
+    cout << "\n\n[ВНИМАНИЕ] ФАЙЛ УДАЛЕН/ПЕРЕМЕЩЁН: " << filePath << "\n> ";
     fileExists = false;
     return;
   }
